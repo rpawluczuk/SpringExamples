@@ -9,4 +9,9 @@ public class CalisthenicCoach implements Coach {
     public String getDailyWorkout() {
         return "Give me 100 pushup in 10 minutes";
     }
+
+    @Override
+    public String getDailyFortune() {
+        return null;
+    }
 }

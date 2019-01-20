@@ -10,6 +10,8 @@
     <!-- add entry to enable component scanning -->
     <context:component-scan base-package="SpringDemo"/>
 
+    <!-- load the file withe the two fields -->
+    <context:property-placeholder location="randomFortune.properties"/>
 
 </beans>
 
