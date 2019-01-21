@@ -23,13 +23,13 @@ public class TennisCoach implements Coach {
 
 
     // define my init method
-    @PostConstruct
+//    @PostConstruct
     public void doMyStartupMethod(){
         System.out.println(">> TennisCoach - inside the init method");
     }
 
     // define my destroy method
-    @PreDestroy
+//    @PreDestroy
     public void doMyCleanupStuff(){
         System.out.println(">> TennisCoach - inside the destroy method");
     }

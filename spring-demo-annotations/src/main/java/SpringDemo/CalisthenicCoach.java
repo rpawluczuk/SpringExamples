@@ -1,9 +1,13 @@
 package SpringDemo;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class CalisthenicCoach implements Coach {
+
+    private FortuneService fortuneService;
+
+    public CalisthenicCoach(FortuneService fortuneService) {
+        this.fortuneService = fortuneService;
+    }
 
     @Override
     public String getDailyWorkout() {
@@ -12,6 +16,6 @@ public class CalisthenicCoach implements Coach {
 
     @Override
     public String getDailyFortune() {
-        return null;
+        return fortuneService.getFortune();
     }
 }
